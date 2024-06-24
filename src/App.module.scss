@@ -1,0 +1,59 @@
+.bg {
+  width: 1920px;
+  background-color: red;
+
+  .inventory {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .me {
+      width: 273px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .pocket,
+      .backpack {
+        width: 100%;
+      }
+
+      .pocket {
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(5, 110px);
+          grid-template-rows: repeat(2, 110px);
+        }
+      }
+
+      .backpack {
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(5, 110px);
+          grid-template-rows: repeat(4, 110px);
+        }
+      }
+    }
+
+    .trunk {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 110px);
+        grid-template-rows: repeat(7, 110px);
+      }
+    }
+  }
+
+  .item {
+    width: 110px;
+    height: 110px;
+    background-color:#161616C2;
+    border: 1px solid black;
+  }
+}
